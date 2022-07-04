@@ -14,8 +14,8 @@
     <section>
       <h2>Square</h2>
       <form action="">
-        <label for="inputSquare_side">Side length (cm): </label>
-        <input id="inputSquare_side" type="number" />
+        <label for="IN_Square_side">Side (cm)</label>
+        <input id="IN_Square_side" type="number" />
         <br />
         <br />
         <button type="button" onclick="calcPerimeterSquare()"> Calculate perimeter </button>
@@ -25,20 +25,20 @@
     <section>
       <h2>Triangle</h2>
       <form action="">
-        <label for="inputTriangle_01">Side #1 length (cm): </label>
-        <input id="inputTriangle_01" type="number" />
+        <label for="IN_Triangle_side01">Side 1 (cm)</label>
+        <input id="IN_Triangle_side01" type="number" />
         <br />
         <br />
-        <label for="inputTriangle_02">Side #2 length (cm): </label>
-        <input id="inputTriangle_02" type="number" />
+        <label for="IN_Triangle_side02">Side 2 (cm)</label>
+        <input id="IN_Triangle_side02" type="number" />
         <br />
         <br />
-        <label for="inputTriangle_base">Base (cm): </label>
-        <input id="inputTriangle_base" type="number" />
+        <label for="IN_Triangle_base">Base (cm)</label>
+        <input id="IN_Triangle_base" type="number" />
         <br />
         <br />
-        <label for="inputTriangle_height">Height (cm): </label>
-        <input id="inputTriangle_height" type="number" />
+        <label for="IN_Triangle_height">Height (cm)</label>
+        <input id="IN_Triangle_height" type="number" />
         <br />
         <br />
         <button type="button" onclick="calcPerimeterTriangle()">Calculate perimeter</button>
@@ -48,12 +48,30 @@
     <section>
       <h2>Circle</h2>
       <form action="">
-        <label for="inputCircle_radius">Radius</label>
-        <input id="inputCircle_radius" type="number" />
+        <label for="IN_Circle_radius">Radius (cm)</label>
+        <input id="IN_Circle_radius" type="number" />
         <br />
         <br />
         <button type="button" onclick="calcPerimeterCircle()">Calculate perimeter</button>
         <button type="button" onclick="calcAreaCircle()">Calculate area</button>
+      </form>
+    </section>
+    <section>
+      <h2>Isosceles Triangle</h2>
+      <form action="">
+        <label for="IN_IsoscelesTriangle_side01">Side 1 (cm)</label>
+        <input id="IN_IsoscelesTriangle_side01" type="number" />
+        <br />
+        <br />
+        <label for="IN_IsoscelesTriangle_side02">Side 2 (cm)</label>
+        <input id="IN_IsoscelesTriangle_side02" type="number" />
+        <br />
+        <br />
+        <label for="IN_IsoscelesTriangle_base">Base (cm)</label>
+        <input id="IN_IsoscelesTriangle_base" type="number" />
+        <br />
+        <br />
+        <button type="button" onclick="calcHeightIsoscelesTriangle()">Calculate height</button>
       </form>
     </section>
     <script src="./figuras.js"></script>
